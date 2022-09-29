@@ -11,17 +11,18 @@
 body {
     font-family: Lato, sans-serif;
     font-weight: 300;
-    color:#3a3a3a;
+    color: #3a3a3a;
 
 }
 
 /* headings and logo*/
 
-h1, h2 {
-        font-family: Oswald, sans-serfif;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        color: #252525;
+h1,
+h2 {
+    font-family: Oswald, sans-serfif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
 }
 
 #logo {
@@ -36,7 +37,8 @@ h1, h2 {
     letter-spacing: 4px;
 }
 
-#menu, #logo {
+#menu,
+#logo {
     line-height: 75px;
 }
 
@@ -54,23 +56,32 @@ h1, h2 {
 #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
 }
+
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
 /*hero image*/
 
 #hero-image {
     height: 600px;
     width: 100%;
-    background: url(/image/hero-image.webp)  no-repeat center center;
+    background: url(/image/hero-image.webp) no-repeat center center;
+
+
+    /* animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
 /*creates the level of zoom for hero imag*/
 @keyframes hero-zoom {
-    from{
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(1.1);
     }
 }
