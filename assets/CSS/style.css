@@ -57,3 +57,20 @@ h1, h2 {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+/*hero image*/
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url(/image/hero-image.webp)  no-repeat center center;
+}
+
+/*creates the level of zoom for hero imag*/
+@keyframes hero-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
